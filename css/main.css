@@ -1,0 +1,199 @@
+/* Stsrt Varibles */
+:root {
+    --dark-color:  #19283F;
+    --main-color:  #33D1CC;
+    --red-color:   #ff3150;
+    --yellow-color:#ffc400;
+    --section-color:#EFF7FA;
+}
+/* End Varibles */
+/* Start Component */
+.card-heading .design-icon {
+    width: 100px;
+}
+.card-heading > p::after {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 2px;
+    width: 130px;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.main-btn:hover {
+    background-color: green;
+    color: var(--yellow-color);
+}
+/* End Component */
+
+/* Start Global Rules */
+body {
+    font-family: "Roboto", sans-serif;
+}
+/* End Global Rules */
+/* Start Navbar  */
+.navbar {
+    background-color: var(--dark-color);
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar .collapse .navbar-nav .nav-item .nav-link.active,
+.navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+    color: var(--main-color) !important ; 
+}
+.navbar .collapse .search {
+    border-left: 1px solid var(--main-color) ;
+    color: var(--main-color)
+}
+/* End Navbar  */
+/* Start Carousel */
+.carousel .carousel-indicators button {
+    width: 24px;
+    height: 6px;
+}
+.carousel .carousel-inner .bg-img-1 {
+    background-image: url(../imgs/carousel3.jpg);
+}
+.carousel .carousel-inner .bg-img-2 {
+    background-image: url(../imgs/carousel2.jpg);
+}
+.carousel .carousel-inner .bg-img-3 {
+    background-image: url(../imgs/carousel1.png);
+}
+.carousel .carousel-inner .carousel-item {
+    background-size: cover;
+    height: calc(100vh - 72px);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.carousel .prev-icon,
+.carousel .next-icon {
+    font-size: 40px;
+    color: #00e7ff;
+    background-color: black;
+    padding: 3px 6px;
+}
+/* End Carousel */
+/* Start Design */
+.design .graphic .box svg {
+    color: var(--main-color);
+}
+.design .graphic .box {
+    margin-top: 180px;
+}
+.design .graphic .box::before {
+    content: attr(value);
+    position: absolute;
+    font-size: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -270px;
+    color: var(--section-color);
+}
+.design .graphic .box h4 {
+    color: var(--yellow-color);
+}
+/* End Design */
+/* Start Application */
+.application {    
+    background-color: var(--section-color);
+}
+.application .nav .nav-link:hover {
+    color: var(--red-color) !important;
+}
+.application .nav .nav-link.active {
+    background-color: var(--red-color);
+    color: var(--yellow-color) !important;
+}
+.application .content .image {
+    overflow: hidden;
+}
+.application .content .image::before {
+    content: attr(data-img);
+    position: absolute;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    background-color: rgb(51 209 204 / 59%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    transform: translateX(calc(-100% - 4px)) ;
+    color: white;
+    transition: .3s;
+}
+.application .content .image:hover::before {
+    transform: translatex(0);
+}
+/* End Application */
+/* Start About-Us */
+.about-us .img-about {
+    height: calc(100vh - 150px);
+}
+/* End About-Us */
+/* Start Team */
+.team {
+    background-color: var(--section-color);
+}
+.team .head-text h2 {
+    color: var(--yellow-color);
+}
+.team .content .card-body .card-title {
+    background-color: var(--main-color);
+}
+/* End Team */
+/* Start Project */
+.project {
+    background-color: var(--dark-color);
+}
+.project .text h2 {
+    font-size: 32px;
+}
+/* End project */
+/* Start Subscribe */
+.subscribe {
+    background-color: var(--yellow-color);
+}
+.subscribe .email input {
+    outline: none;
+    caret-color: white ;
+    border-bottom: 1px solid white !important;
+}
+.subscribe .email input::placeholder {
+    color: white;
+}
+/* End Subscribe */
+/* Start Footer */
+footer {
+    background-color: var(--dark-color);
+}
+footer .copy .p-copy span {
+    color: var(--main-color);
+}
+footer .copy .p-copy strong {
+    color: var(--yellow-color) !important;
+}
+footer .contact .icon svg {
+    width: 20px;
+    height: 20px;
+}
+footer .contact .icon svg.face {
+    background-color: #1877F2;
+}
+footer .contact .icon svg.twit {
+    background-color: #1da1f2;
+}
+footer .contact .icon svg.youtube {
+    background-color: #FF0000;
+}
+footer .contact .icon svg.linked {
+    background-color: #0077B5;
+}
+/* End Footer */
